@@ -1,0 +1,964 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    perspective: 700px;
+    background-color: black;
+    color: white;
+}
+
+.main1{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+.perant-wiblist{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    padding-top: 3px;
+}
+.contant-wiblist1{
+    display: flex;
+    width: 45%;
+    padding-top: 2px;
+    padding-left: 80px;
+}
+.contant-wiblist1 .as{
+    width: 2px;
+    height: 15px;
+    background-color: brown;
+    display: none;
+}
+.contant-wiblist1 a{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    color: white;
+}
+.contant-wiblist2{
+    display: flex;
+    width: 45%;
+    padding-top: 2px;
+    padding-left:180px ;
+    padding-right: 50px;
+}
+
+.contant-wiblist2 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+.home-features {
+    position: relative;
+    display: inline-block;
+}
+
+.home-features::before,
+.home-features::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2px;
+    height: 0;
+    background-color:rgb(17, 161, 244);
+    transform: translateY(-50%);
+    transition: height 0.3s ease;
+}
+
+.home-features::before {
+    left: -1px;
+}
+
+.home-features::after {
+    right: -1px;
+}
+
+.home-features:hover::before,
+.home-features:hover::after {
+    height: 20px;
+}
+.home-features a i:hover{
+    color: blue;
+    transform: rotateY(180deg);
+}
+
+.perant-capital{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.contant-capital1{
+    display: flex;
+}
+.contant-capital1 .-capital{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -27px;
+}
+.contant-capital1 .icon{
+    margin-top: -30px;
+}
+
+
+
+.contant-capital2{
+    padding-top: 5px;
+}
+
+
+
+
+.pages {
+    position: relative;
+}
+
+.pages > a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-top: -10px;
+}
+.pages > a:hover{
+    border: 2px solid rgb(17, 161, 244);
+    transition: 1s;
+    color:rgb(17, 161, 244);
+}
+
+.pages > a span {
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+
+
+
+
+.pages > a::before {
+    left: 0;
+    transform-origin: bottom;
+}
+
+
+.pages:hover > a span::before,
+.pages:hover > a span::after {
+    transform: scaleX(1);
+}
+
+.pages:hover > a::before,
+.pages:hover > a::after {
+    transform: scaleY(1);
+}
+.pages .pages-a i{
+    margin-left: -7px;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    width:250px;
+    padding: 15px;
+
+    display: flex;
+    gap: 30px;
+
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateX(-50%) translateY(20px);
+
+    transition: all 0.3s ease;
+
+    z-index: 1000;
+}
+
+
+.pages:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateX(-50%) translateY(0);
+}
+
+
+.dropdown-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.dropdown-column > span {
+    color: #777;
+    font-size: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-column a {
+    text-decoration: none;
+    color: #222;
+    transition: 0.3s;
+}
+
+.dropdown-column a:hover {
+    color: rgb(17, 161, 244);
+}
+
+
+.contant-capital2 .contant-ul{
+    display: flex;
+    list-style: none;
+}
+.contant-capital2 .contant-ul .a1a a{
+    text-decoration: none;
+    color:white;
+    margin-left: 20px;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 10px 15px;
+}
+.contant-capital2 .contant-ul .a1a a:hover{
+    border: 2px solid rgb(17, 161, 244);
+    transition: 1s;
+    color:rgb(17, 161, 244);
+} 
+
+
+
+
+
+
+
+.contant-capital3{
+    display: flex;
+    padding-top: 25px;
+}
+
+.contant-capital3 .number{
+    width: 15px;
+    height: 17px;
+    border-radius: 50%;
+    background-color:rgb(17, 161, 244);
+    padding-left: 8px;
+    padding-top: 1px;
+    color: white;
+    font-weight: bold;
+    margin-bottom:-1.25px;
+}
+.contant-capital3 i{
+    font-size: 20px;
+}
+.contant-capital3 .dollar{
+    margin-right: 20px;
+}
+.contant-capital3 .user{
+    margin-right: 20px;
+}
+.contant-capital3 .shopping{
+    margin-top: -15px;
+}
+.contant-capital3 i:hover{
+    color:rgb(17, 161, 244);
+}
+ .shopping i:hover{
+margin-top: 3px;
+}
+
+.perant-Sale{
+    background-color: rgb(17, 161, 244);
+    height: 38px;
+    padding-left: 380px;
+    padding-top: 10px;
+}
+.contant1{
+    margin: auto;
+     color: white;
+}
+.contant1 a{
+    text-decoration: none;
+    color:rgb(255, 240, 179);
+    display: inline-block;
+    font-size: 20px;
+}
+.line-sales{
+    width: 152px;
+    height: 3px;
+    background-color: rgb(14, 14, 63);
+    margin-left: 492px;
+    margin-top: 2px;
+}
+.perant-Sale .contant1 a:hover{
+   transform: scale(1.05);
+   margin-left: 2px;
+}
+
+.main2{
+    
+    height: 500px;
+    background-image: url(../image/dad9f1df-3df3-4851-ade7-757bee82c77d.jpg);
+    background-size: cover;
+    padding-top: 170px;
+    padding-left: 115px;
+}
+.perant-minimal{
+    width: 500px;
+}
+
+.perant-minimal .Fashion-Sale {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  color:rgb(38, 64, 64);
+}
+
+
+.perant-minimal h2{
+    text-align: center;
+    margin-top: 10px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+.perant-minimal p{
+    text-align: center;
+    color: gray;
+}
+.perant-minimal button{
+  margin-left: 165px;
+  width: 180px;
+  height: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(17, 161, 244);
+  border: 0;
+  margin-top: 20px;
+}
+.perant-minimal button:hover{
+    color: rgb(17, 161, 244);
+    background-color: white;
+    border: 2px solid grey;
+    transition: 1s;
+}
+
+
+.perant-main3{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.d3 img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.d1 img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.d2 img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.b{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.b > div{
+    width: 100%;
+    max-width: 360px;
+    height: 400px;
+    margin: 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+.b > div::after{
+    content: "";
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.type-product div img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.b div:hover img{
+    transform: scale(1.1,1.1);
+}
+.b  div .c{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateY(53px);
+    transition: 1s;
+}
+.b  div:hover .c{
+    transform: translateY(0px);
+
+}
+
+.b  div .c h2{
+    color: #fff;
+    margin: 15px 0 20px;
+}
+.b  div .c a{
+    color: #CEBD9C;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #CEBD9C;
+    text-decoration: none;
+}
+.b  div .c a:hover{
+    letter-spacing: 1px;
+}
+.main3{
+    width: 90%;
+    height:600px ;
+    margin: auto;
+}
+.perant-week{
+    display: flex;
+    width: 100%;
+}
+.h2-week{
+    width: 40%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.contant-week{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-left: 113px;
+    padding-top: 20px;
+}
+.contant-week a{
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:white;
+}
+.change-color a{
+    color:rgb(17, 161, 244);
+}
+.line-week{
+    width: 65px;
+    height: 5px;
+    background-color:rgb(17, 161, 244);
+    margin-left: auto;
+    margin-right: 190px;
+    margin-bottom: -5;
+}
+.line-week2{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(17, 161, 244);
+}
+.perant-card{
+    position: relative;
+    width: 250px;
+    height: 360px;
+    transform-style: preserve-3d;
+}
+.card-1{
+    background-image: url(../image/08_cloud_automation_tool.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 2px solid white;
+   
+}
+.card-2{
+    background-image: url(../image/09_ai_vision_system.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.aa2{
+    background-image: url(../image/10_devops_pipeline_script.png);
+}
+.aa3{
+    background-image: url(../image/11_smart_automation_engine.png);
+}
+.aa4{
+    background-image: url(../image/12_deep_learning_toolkit.png);
+}
+.ss2{
+    background-image: url(../image/13_ai_trends.png);
+}
+.ss3{
+    background-image: url(../image/14_cyber_security_news.png);
+}
+.ss4{
+    background-image: url(../image/15_machine_learning_news.png);
+}
+
+.perant-card:hover .card-1{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+ .perant-card-all{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+ }
+ .angles-right , .angles-left{
+    padding-top: 180px;
+    font-weight: bold;
+    font-size: 20px;
+ }
+  .contant-all-card{
+    width: 250px;
+  }
+ .contant-all-card p a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:white;
+ }
+ .contant-all-card p{
+    text-align: center;
+ }
+ .icon-card{
+  width: 185.8px;
+  height: 44px;
+  background-color: white;
+  position: absolute;
+  top: 280px;
+  left: 33px;
+ }
+ .icon-card i{
+    font-size: 45px;
+    margin-left: auto;
+    color:black;
+    padding-left: 3px;
+ }
+ .icon-card i:hover{
+    background-color: rgb(17, 161, 244);
+ }
+ .contant-all-card:hover p a{
+    color:rgb(17, 161, 244);
+ }
+ .main4{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .perant-customer{
+    width: 600px;
+    height: 300px;
+ }
+  .perant-customer h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+    .perant-customer p{
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .perant-name-image{
+    display: flex;
+    margin-left: 180px;
+  }
+ 
+  .contant-image img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .contant-name{
+    padding-left: 10px;
+  }
+  .contant-name p{
+    margin-top: -15px;
+    font-size: 15px;
+  }
+
+  .chevron-right{
+    font-size: 35px;
+  }
+
+
+
+.main5{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.main5 h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+  .perant-card2{
+    width: 250px;
+    height: 360px;
+    transform-style: preserve-3d;
+}
+
+.card-22{
+    background-image: url(../image/16_testimonial_avatar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+}
+.card-22::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-image: url(../image/17_ai_cloud_automation.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:1s;
+    background-size: cover;
+    z-index: 1;
+    border-radius: 10px;
+}
+.card-22:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.z1{
+    background-image: url(../image/18_data_encryption.png);
+}
+.z2{
+    background-image: url(../image/19_threat_detection.png);
+}
+.z3{
+    background-image: url(../image/20_computer_vision.png);
+}
+.z1::after{
+    background-image: url(../image/21_nlp_models.png);
+}
+.z2::after{
+    background-image: url(../image/22_automation_bots.png);
+}
+.z3::after{
+    background-image: url(../image/03_cyber_security.png);
+}
+ .perant-card-all2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+ }
+ .angles-right2 {
+    padding-top: 180px;
+    font-weight: bold;
+    font-size: 20px;
+ }
+  .contant-all-card2{
+    width: 250px;
+  }
+ .contant-all-card2 p a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color:white;
+ }
+ .contant-all-card2 p{
+    text-align: center;
+ }
+ .icon-card2{
+  width: 185.8px;
+  height: 44px;
+  background-color: white;
+  position: absolute;
+  top: 280px;
+  left: 33px;
+  display: none;
+ }
+ .icon-card2 i{
+    font-size: 45px;
+    margin-left: auto;
+    color:black;
+    padding-left: 3px;
+ }
+ .icon-card2 i:hover{
+    background-color: rgb(17, 161, 244);
+ }
+ .contant-all-card2:hover p a{
+    color:rgb(17, 161, 244);
+ }
+
+ .card-22:hover .icon-card2{
+    display: block;
+    z-index: 5;
+ }
+
+.main6 h2{
+    text-align: center;
+    font-size: 40px;
+}
+.perant-main6{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contant-main6{
+    width: 300px;
+    height: 670px;
+}
+.contant-main6 img{
+    width: 100%;
+    height: 350px;
+}
+.contant-main6 p{
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
+.contant-main6 h2{
+    font-size: 20px;
+}
+.contant-main6 a{
+    font-size: 20px;
+     transition: 0.20s;
+}
+.contant-main6 img:hover{
+    transform: scale(1.04,1.04);
+}
+.contant-main6 a:hover{
+    font-size: 22px;
+    transition: 0.20s;
+}
+.contant-main6:hover h3{
+    color:rgb(17, 161, 244);
+}
+.perant-fast{
+    width: 100%;
+    height: 165px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.contant-fast{
+    width: 250px;   
+}
+.contant-fast h3{
+   text-align: center;
+}
+.contant-fast p{
+   text-align: center;
+   color: gray;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contant-fast i{
+   padding-left: 105px;
+   padding-top: 5px;
+   font-size: 35px;
+   color: gray;
+   transition:0.2s; 
+}
+.contant-fast i:hover{
+    color: rgb(29, 48, 48); 
+    transition: 0.2s;
+    transform: rotateX(360deg);
+}
+
+
+.perant-Subscribe{
+    width: 90%;
+    height: 700px;
+    margin: auto;
+}
+.part1-Subscribe{
+    display: flex;
+}
+.contant1-Subscribe p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+}
+.contant1-Subscribe h2{
+    color: white;
+}
+.contant2-Subscribe{
+    display: flex;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+.contant2-Subscribe-input input{
+    width: 350px;
+    height: 47px;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.contant2-Subscribe-but button{
+    width: 150px;
+    height: 52px;
+    margin-left: 10px;
+    font-size: 25px;
+    background-color:rgb(17, 161, 244);
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+.contant3-Subscribe{
+    margin-left: auto;
+    padding-top: 45px;
+}
+.contant3-Subscribe i{
+    font-size: 30px;
+    color: white;
+    transition: 1s;
+    margin-left: 10px;
+    
+}
+
+.contant2-Subscribe-but button:hover{
+    transform: scale(1.08,1.08);
+}
+.contant3-Subscribe i:hover{
+    color: gray;
+    transform: scale(1.08,1.08);
+    transition: 1s
+}
+.part2-Subscribe-contant h2{
+    color: white;
+    margin-bottom: 30px;
+}
+.part2-Subscribe-contant a{
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 1s
+}
+.part2-Subscribe{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    height: 320px;
+}
+.part2-Subscribe-capital p {
+    color: white;
+    font-size: 30px;
+}
+.part2-Subscribe-capital p span{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.619);
+}
+.contant-part2-Subscribe{
+    display: flex;
+}
+.part2-Subscribe-icon{
+    padding-top: 30px;
+}
+.part2-Subscribe-icon i{
+    font-size: 40px;
+    color:rgb(17, 161, 244);
+}
+.part2-Subscribe-contant a:hover{
+    text-decoration:underline;
+    transform: scale(1.10,1.10);
+    transition: 1s
+}
+
+.part3-Subscribe{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 270px;
+    color: white;
+}
+.contant-part3-subscribte2 i{
+    color: black;
+    animation-name: change1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    width: 30px;
+}
+@keyframes change1 {
+    from{
+        color: black;
+    }
+    to{
+        color:rgb(17, 161, 244);
+        font-size: 25px;
+    }
+}
+.contant-part3-subscribte3 a{
+    color: rgb(17, 161, 244);
+    text-decoration: none;
+    transition: 1s;
+}
+.contant-part3-subscribte3 a:hover{
+    text-decoration:underline;
+    transition: 1s;
+    width: 30px;
+    letter-spacing: 1px;
+}
+.contant1-Subscribe{
+    width: 400px;
+}
